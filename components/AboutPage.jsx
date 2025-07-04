@@ -1,7 +1,10 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
+
 export default function AboutPage() {
+  const { basePath } = useRouter();
   return (
     <div className="bg-[#0A2C2E] text-white px-6 md:px-20 py-16 space-y-24">
       {/* My Story */}
@@ -27,7 +30,7 @@ export default function AboutPage() {
           </div>
           <div className="md:w-1/2">
             <Image
-              src="/about.jpg" // Replace with your actual image path
+              src={`${basePath}/about.jpg`} // ✅ updated path
               alt="Bhargavi performing"
               width={600}
               height={800}
