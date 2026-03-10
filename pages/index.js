@@ -30,15 +30,14 @@ export default function Home() {
           alt="Background"
           style={{ 
             filter: `blur(${blurAmount}px)`,
-            maskImage: 'linear-gradient(to right, transparent 0%, transparent 15%, rgba(0,0,0,0.5) 35%, black 55%, black 100%)',
-            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, transparent 15%, rgba(0,0,0,0.5) 35%, black 55%, black 100%)'
+            
           }}
-          className="w-full h-full object-contain object-[250px_0px] scale-150"
+          className="w-full h-full object-cover object-[0px_-240px] scale-100"
         />
       </div>
 
       {/* 🔳 Overlay image if needed */}
-      <div className="fixed inset-0 z-10 bg-black/0" />
+      <div className="fixed inset-0 z-10 bg-black/30" />
 
       {/* Gradient edges */}
       <div className="fixed inset-y-0 left-0 w-40 md:w-64 z-15 bg-gradient-to-r from-black/90 to-transparent" />
