@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section className="h-screen flex items-center justify-start ml-10 md:ml-24 text-white">
+    <section className="h-screen flex items-center justify-start px-10 md:px-24 text-white">
       <div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-widest leading-relaxed">
           BHARGAVI<br />SARDESAI
