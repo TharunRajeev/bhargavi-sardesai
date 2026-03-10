@@ -4,10 +4,10 @@ import ContactPage from '/components/ContactPage'; // the actual about section c
 
 export default function contact() {
   return (
-    <>
+    <div className="h-screen flex flex-col overflow-hidden">
       <Navbar />
       <ContactPage />
       <Footer />
-    </>
+    </div>
   );
 }
